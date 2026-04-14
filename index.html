@@ -37,7 +37,15 @@
             top: 0;
             z-index: 1000;
         }
-        .logo { font-weight: bold; font-size: 1.5rem; color: var(--primary-blue); }
+
+        /* AJUSTEMENT POUR LE LOGO SVG */
+        .logo img { 
+            height: 40px; 
+            background-color: var(--primary-blue); /* Fond bleu pour rendre le logo blanc visible */
+            padding: 5px;
+            border-radius: 4px;
+            display: block;
+        }
         
         nav ul { display: flex; list-style: none; }
         nav ul li { margin-left: 25px; font-weight: 600; cursor: pointer; }
@@ -109,7 +117,9 @@
     </div>
 
     <header>
-        <div class="logo">GVQ DÉMO</div>
+        <div class="logo">
+            <img src="https://gvq.ca/images/gvq_logo/Logo-GVQ-RVB-BLANC_2025.svg" alt="Logo GVQ">
+        </div>
         <nav>
             <ul>
                 <li>Groupes accompagnés</li>
