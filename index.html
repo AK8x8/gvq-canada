@@ -9,7 +9,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
         
-        /* COULEURS GVQ (Approximatives) */
         :root {
             --primary-blue: #0056b3;
             --secondary-gray: #f4f4f4;
@@ -17,7 +16,6 @@
             --text-dark: #2c3e50;
         }
 
-        /* HEADER & UTILS */
         .top-bar {
             background: var(--secondary-gray);
             padding: 5px 10%;
@@ -43,9 +41,7 @@
         
         nav ul { display: flex; list-style: none; }
         nav ul li { margin-left: 25px; font-weight: 600; cursor: pointer; }
-        nav ul li:hover { color: var(--primary-blue); }
 
-        /* HERO SECTION */
         .hero {
             height: 450px;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1350&q=80');
@@ -60,7 +56,6 @@
         }
         .hero h1 { font-size: 3rem; margin-bottom: 10px; }
 
-        /* MOTEUR DE RECHERCHE (Le layout "Tab") */
         .search-container {
             width: 80%;
             margin: -50px auto 50px auto;
@@ -69,16 +64,8 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             overflow: hidden;
         }
-        .search-tabs {
-            display: flex;
-            background: var(--primary-blue);
-        }
-        .tab {
-            padding: 15px 30px;
-            color: #fff;
-            cursor: pointer;
-            border-right: 1px solid rgba(255,255,255,0.2);
-        }
+        .search-tabs { display: flex; background: var(--primary-blue); }
+        .tab { padding: 15px 30px; color: #fff; cursor: pointer; border-right: 1px solid rgba(255,255,255,0.2); }
         .tab.active { background: #fff; color: var(--primary-blue); font-weight: bold; }
 
         .search-form {
@@ -89,62 +76,24 @@
             align-items: end;
         }
         .form-group label { display: block; font-size: 0.8rem; margin-bottom: 5px; color: #666; }
-        .form-group select, .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .btn-search {
-            background: var(--accent-orange);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 4px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+        .form-group select, .form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .btn-search { background: var(--accent-orange); color: white; border: none; padding: 12px 30px; border-radius: 4px; font-weight: bold; cursor: pointer; }
 
-        /* GRILLE DE DESTINATIONS */
         .content-section { padding: 50px 10%; }
         .section-title { margin-bottom: 30px; border-left: 5px solid var(--primary-blue); padding-left: 15px; }
         
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .card:hover { transform: translateY(-5px); }
-        .card-img { height: 200px; background: #ddd; width: 100%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: #fff; border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+        .card-img { height: 200px; width: 100%; }
         .card-body { padding: 15px; }
-        .card-body h3 { font-size: 1.1rem; margin-bottom: 10px; }
 
-        /* FOOTER */
-        footer {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 50px 10% 20px 10%;
-            margin-top: 50px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-        }
+        footer { background: #2c3e50; color: #ecf0f1; padding: 50px 10% 20px 10%; margin-top: 50px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
         .footer-col h4 { margin-bottom: 20px; color: #fff; text-transform: uppercase; font-size: 0.9rem; }
         .footer-col ul { list-style: none; }
-        .footer-col ul li { margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8; cursor: pointer; }
+        .footer-col ul li { margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8; }
         .footer-bottom { border-top: 1px solid #444; padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-        /* RESPONSIVE */
         @media (max-width: 900px) {
             .search-form { grid-template-columns: 1fr 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -246,7 +195,6 @@
                 <ul>
                     <li>Relations de presse</li>
                     <li>Nouvelles et promotions</li>
-                    <li>Concours</li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -254,7 +202,6 @@
                 <ul>
                     <li>Blogue</li>
                     <li>FAQ</li>
-                    <li>Références</li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -264,7 +211,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 Groupe Voyages Québec - Démo Layout. Tous droits réservés.
+            &copy; 2026 Groupe Voyages Québec - Démo Layout.
         </div>
     </footer>
 
