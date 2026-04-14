@@ -141,4 +141,132 @@
         }
         .footer-col h4 { margin-bottom: 20px; color: #fff; text-transform: uppercase; font-size: 0.9rem; }
         .footer-col ul { list-style: none; }
-        .footer-col ul li { margin-bottom:
+        .footer-col ul li { margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8; cursor: pointer; }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 20px; text-align: center; font-size: 0.8rem; }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .search-form { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>📞 1 800 463 1598</span>
+        <a href="#">ESPACE AGENT</a>
+        <a href="#">CONNEXION</a>
+    </div>
+
+    <header>
+        <div class="logo">GVQ DÉMO</div>
+        <nav>
+            <ul>
+                <li>Groupes accompagnés</li>
+                <li>Individuels</li>
+                <li>Croisières</li>
+                <li>Nous joindre</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Le monde vous attend, vivez-le !</h1>
+        <p>Découvrez nos expériences de voyage uniques</p>
+    </section>
+
+    <div class="search-container">
+        <div class="search-tabs">
+            <div class="tab active">Accompagnés</div>
+            <div class="tab">Individuels</div>
+            <div class="tab">Croisières</div>
+            <div class="tab">Sud</div>
+        </div>
+        <div class="search-form">
+            <div class="form-group">
+                <label>Destination</label>
+                <select><option>Toutes les destinations</option></select>
+            </div>
+            <div class="form-group">
+                <label>Mois de départ</label>
+                <select><option>Tous les mois</option></select>
+            </div>
+            <div class="form-group">
+                <label>Collection</label>
+                <select><option>Toutes les collections</option></select>
+            </div>
+            <div class="form-group">
+                <label>Mots-clés</label>
+                <input type="text" placeholder="Rechercher...">
+            </div>
+            <button class="btn-search">RECHERCHER</button>
+        </div>
+    </div>
+
+    <main class="content-section">
+        <h2 class="section-title">Laissez-nous vous inspirer</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img" style="background:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=60') center/cover;"></div>
+                <div class="card-body">
+                    <h3>Top 5 - France & Paris</h3>
+                    <p>Découvrez la ville lumière et ses environs.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=400&q=60') center/cover;"></div>
+                <div class="card-body">
+                    <h3>Croisières fluviales</h3>
+                    <p>Au fil de l'eau sur les plus beaux fleuves.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background:url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=400&q=60') center/cover;"></div>
+                <div class="card-body">
+                    <h3>Îles de la Madeleine</h3>
+                    <p>Un dépaysement total au cœur du Québec.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Notre entreprise</h4>
+                <ul>
+                    <li>À propos de GVQ</li>
+                    <li>Pourquoi nous choisir</li>
+                    <li>Emplois</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>GVQ en action</h4>
+                <ul>
+                    <li>Relations de presse</li>
+                    <li>Nouvelles et promotions</li>
+                    <li>Concours</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Conseils voyages</h4>
+                <ul>
+                    <li>Blogue</li>
+                    <li>FAQ</li>
+                    <li>Références</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Infolettre</h4>
+                <input type="email" placeholder="Votre courriel" style="padding:8px; width:100%; margin-bottom:10px;">
+                <button class="btn-search" style="width:100%; padding:8px;">S'ABONNER</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Groupe Voyages Québec - Démo Layout. Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+</html>
