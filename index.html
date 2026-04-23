@@ -253,7 +253,8 @@
             .catch(error => console.warn('Failed to retrieve override domain, will continue using ', config.domain, error))
             .finally(() => loadChat());
 
-        function loadChat() {
+        function loadChat() 
+        {
             var se = document.createElement("script");
             se.type = "text/javascript";
             se.async = true;
@@ -265,7 +266,8 @@
                 initFn(config, cb);
                 se.removeEventListener('init', handleInitEvent)
             }
-            function handleErrorEvent(e) {
+            function handleErrorEvent(e) 
+            {
                 ef && ef(e);
                 se.removeEventListener('customerror', handleErrorEvent);
             }
@@ -274,7 +276,17 @@
             var os = document.getElementsByTagName("script")[0];
             os.parentNode.insertBefore(se, os);
         }
-    })();
+    })
+    (
+        function (chatApp) {
+                            // set variables
+                            chatApp.setVariables(
+                                { 
+                                    "$language":"fr", 
+                                    "$emailAddress": "contact.service.8x8@gmail.com"
+                                }
+                            }
+    );
     </script>
     
 </body>
